@@ -1,0 +1,63 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color:#f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+/* 头部样式 */
+header {
+    background: #0078d4;
+    color: #fff;
+    text-align: center;/* 行内/文本类内容水平居中*/
+    padding: 2rem;/* 内边距*/
+}
+/* 主要内容样式 */
+main {
+    max-width: 800px;
+    margin: 0 auto;/*块级元素本身水平居中*/
+    padding: 2rem;
+}
+section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 8px;/*圆角样式*/
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);/*盒子阴影*/
+}
+h2 {
+    margin-bottom: 1rem;
+    color: #0078d4;
+}
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed #eee;
+}
+/* 页脚样式 */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+    /* 新增：固定定位 - 锁定在页面底部 */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* 宽度占满整个页面 */
+    /* 可选：增加z-index，防止被其他元素覆盖 */
+    z-index: 999;
+    /* 可选：固定footer高度（如果需要） */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
